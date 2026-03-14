@@ -1,0 +1,269 @@
+MORTGAGE UNDERWRITING POLICY MANUAL
+Version 2.0 - Effective January 2024
+
+=================================================================
+SECTION 1: CREDIT GUIDELINES
+=================================================================
+
+1.1 Credit Score Requirements
+
+Minimum credit score for conventional loans: 620
+- Score 740+: Excellent tier - best available rates, streamlined approval
+- Score 700-739: Very Good tier - favorable rates, standard review
+- Score 660-699: Good tier - standard rates, full documentation required
+- Score 620-659: Fair tier - higher rates, compensating factors required
+- Score below 620: Does not meet conventional loan minimum requirements
+
+For FHA loans, minimum score is 580 with 3.5% down payment.
+For VA loans, no minimum score but lenders typically require 620+.
+
+1.2 Payment History Standards
+
+Late payments are evaluated on a rolling 12-month and 24-month basis:
+- 0 late payments in 12 months: Acceptable
+- 1 late payment (30-day) in 12 months: Acceptable with explanation
+- 2+ late payments in 12 months: Requires compensating factors
+- Any 60-day or 90-day late payment in 12 months: High risk flag
+
+1.3 Derogatory Credit Items
+
+Bankruptcy:
+- Chapter 7: Minimum 4 years since discharge for conventional loans
+- Chapter 13: Minimum 2 years since discharge, or 4 years since dismissal
+- Multiple bankruptcies: Minimum 5 years since most recent discharge
+
+Foreclosure:
+- Minimum 7 years since completion for conventional loans
+- Minimum 3 years for FHA loans with extenuating circumstances
+
+Collections:
+- Medical collections: May be excluded from evaluation per CFPB guidelines
+- Non-medical collections over $2,000: Must be paid or on payment plan
+- Non-medical collections under $2,000: Evaluated on case-by-case basis
+
+=================================================================
+SECTION 2: INCOME AND EMPLOYMENT GUIDELINES
+=================================================================
+
+2.1 Employment Stability Requirements
+
+W-2 Employees:
+- Minimum 2 years continuous employment in same field
+- Gap in employment over 6 months requires written explanation
+- Recent job changes acceptable if in same field with equal or higher pay
+
+2.2 Income Verification Standards
+
+All income must be verified with documentation:
+- W-2 employees: 2 years of W-2s, 30 days of pay stubs
+- Self-employed: 2 years of personal and business tax returns
+- Commission income: Must be received for minimum 2 years
+- Bonus income: 2-year history required, averaged
+
+2.3 Self-Employment Income
+
+Self-employed borrowers require additional scrutiny:
+- Minimum 2 years of self-employment in same business
+- Personal and business tax returns for 2 years
+- Year-to-date profit and loss statement
+- Business license verification
+- Income averaged over 2 years; declining income is a red flag
+- If business shows loss, income may not be usable
+
+2.4 Debt-to-Income (DTI) Ratio
+
+Front-end ratio (housing expense):
+- Maximum 28% for conventional loans
+- Maximum 31% for FHA loans
+- Maximum 41% for VA loans
+
+Back-end ratio (total debt):
+- Maximum 43% for conventional loans (QM limit)
+- Maximum 50% with strong compensating factors
+- Maximum 57% for FHA loans with compensating factors
+
+Compensating factors for higher DTI:
+- Credit score above 720
+- Significant liquid reserves (6+ months)
+- Minimal payment shock
+- Long employment tenure (5+ years)
+
+=================================================================
+SECTION 3: ASSET AND RESERVE REQUIREMENTS
+=================================================================
+
+3.1 Down Payment Requirements
+
+Conventional loans:
+- Minimum 3% down for first-time buyers (with PMI)
+- Minimum 5% down for repeat buyers (with PMI)
+- 20% down eliminates PMI requirement
+- Maximum LTV: 97% for conforming loans
+
+FHA loans: Minimum 3.5% with credit score 580+
+VA loans: No down payment required
+USDA loans: No down payment required
+
+3.2 Reserve Requirements
+
+Reserves = liquid assets available after closing:
+- Primary residence: Minimum 2 months PITI reserves
+- Second home: Minimum 2 months PITI reserves
+- Investment property: Minimum 6 months PITI reserves
+
+Acceptable reserve sources:
+- Checking and savings accounts
+- Money market accounts
+- Stocks, bonds, mutual funds (at 70% of value)
+- Retirement accounts (at 60% of vested value)
+
+3.3 Source of Funds Verification
+
+All funds must be sourced and documented:
+- Bank statements for 2 months minimum
+- Large deposits (>25% of monthly income) require explanation
+- Gift funds: Gift letter and documentation of transfer
+- Seller concessions: Maximum 3% for conventional, 6% for FHA
+
+3.4 Large Deposit Guidelines
+
+Any deposit exceeding 25% of the borrower's monthly qualifying income
+must be sourced with documentation. Acceptable sources include:
+- Payroll deposits (verified with pay stub)
+- Tax refunds (verified with IRS documentation)
+- Sale of assets (verified with bill of sale)
+- Gift funds (verified with gift letter and bank statements)
+- Insurance proceeds (verified with claim documentation)
+
+Unacceptable sources:
+- Cash deposits without documentation
+- Funds from undisclosed sources
+- Borrowed funds not disclosed on application
+
+=================================================================
+SECTION 4: COLLATERAL AND PROPERTY GUIDELINES
+=================================================================
+
+4.1 Appraisal Requirements
+
+All properties require an appraisal by a licensed appraiser:
+- Conventional loans: Full appraisal required
+- Appraisal must be within 120 days of closing
+- Second appraisal may be required if value is disputed
+
+4.2 Loan-to-Value (LTV) Limits
+
+Conventional purchase:
+- Maximum 97% LTV for primary residence
+- Maximum 90% LTV for second home
+- Maximum 85% LTV for investment property
+
+PMI requirements:
+- Required when LTV exceeds 80%
+- Can be canceled when LTV reaches 78% (automatic) or 80% (borrower request)
+
+4.3 Property Condition Standards
+
+Properties must meet minimum habitability standards:
+- Functional heating, plumbing, and electrical systems
+- Sound roof with minimum 3 years remaining useful life
+- No structural defects or safety hazards
+- No environmental hazards (lead paint, asbestos, mold)
+- Adequate access from public road
+
+Condition ratings:
+- Excellent: No repairs needed, move-in ready
+- Good: Minor cosmetic updates only
+- Fair: Some repairs needed but habitable
+- Poor: Major repairs required - may not meet minimum standards
+
+Properties requiring repairs over $5,000 may need repair escrow or FHA 203(k) renovation loan.
+
+4.4 Property Types
+
+Eligible property types:
+- Single-family detached homes
+- Condominiums (must be in approved project)
+- Townhouses
+- PUDs (Planned Unit Developments)
+- 2-4 unit properties (for owner-occupants)
+
+Ineligible property types:
+- Mobile homes without permanent foundation
+- Commercial properties
+- Vacant land
+- Properties with commercial zoning only
+
+=================================================================
+SECTION 5: COMPLIANCE AND FAIR LENDING
+=================================================================
+
+5.1 Fair Lending Act Compliance
+
+Decisions must not consider protected characteristics:
+- Race, color, national origin
+- Religion
+- Sex, gender identity
+- Marital status, familial status
+- Age (provided applicant has legal capacity)
+- Disability
+- Receipt of public assistance
+
+5.2 Bias Prevention
+
+All automated decisions must be reviewed for:
+- Disparate treatment: Different treatment based on protected class
+- Disparate impact: Neutral policies with disproportionate effect
+- Geographic discrimination (redlining)
+
+5.3 Documentation Requirements
+
+All decisions must include:
+- Complete audit trail of analysis and reasoning
+- Clear documentation of factors considered
+- Explanation of any adverse action
+- Evidence that protected characteristics were not factors
+
+=================================================================
+SECTION 6: DECISION FRAMEWORK
+=================================================================
+
+6.1 Approval Criteria
+
+Application should be APPROVED when:
+- All guidelines met without exception
+- Risk score 0-30
+- No policy violations
+- No bias flags
+
+6.2 Conditional Approval Criteria
+
+Application should be CONDITIONALLY APPROVED when:
+- Most guidelines met but additional documentation needed
+- Risk score 31-60
+- Minor policy exceptions with compensating factors
+- Conditions can be reasonably satisfied before closing
+
+Common conditions:
+- Additional income documentation
+- Letter of explanation for credit items
+- Verification of employment
+- Additional asset documentation
+- Property repair completion
+
+6.3 Denial Criteria
+
+Application should be DENIED when:
+- Fundamental guidelines not met
+- Risk score 61-100
+- Major policy violations without compensating factors
+- Applicant cannot reasonably satisfy conditions
+
+6.4 Human Review Triggers
+
+Cases requiring mandatory human review:
+- Risk score above 65
+- Any bias flags detected
+- Denial recommendations
+- Multiple policy exceptions requested
+- Loan amount exceeding $750,000

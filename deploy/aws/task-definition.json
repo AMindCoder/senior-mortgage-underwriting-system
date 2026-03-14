@@ -1,0 +1,58 @@
+{
+  "family": "mortgage-underwriting",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "1024",
+  "memory": "2048",
+  "executionRoleArn": "arn:aws:iam::ACCOUNT_ID:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "underwriting-app",
+      "image": "ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/mortgage-underwriting:latest",
+      "portMappings": [
+        {
+          "containerPort": 8501,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        { "name": "POSTGRES_HOST", "value": "YOUR_RDS_ENDPOINT" },
+        { "name": "POSTGRES_PORT", "value": "5432" },
+        { "name": "POSTGRES_DB", "value": "mortgage_underwriting" },
+        { "name": "CHROMA_HOST", "value": "YOUR_CHROMA_HOST" },
+        { "name": "CHROMA_PORT", "value": "8000" },
+        { "name": "ENVIRONMENT", "value": "production" },
+        { "name": "LOG_LEVEL", "value": "INFO" }
+      ],
+      "secrets": [
+        {
+          "name": "OPENAI_API_KEY",
+          "valueFrom": "arn:aws:secretsmanager:REGION:ACCOUNT_ID:secret:mortgage-underwriting/openai-api-key"
+        },
+        {
+          "name": "POSTGRES_USER",
+          "valueFrom": "arn:aws:secretsmanager:REGION:ACCOUNT_ID:secret:mortgage-underwriting/db-user"
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "valueFrom": "arn:aws:secretsmanager:REGION:ACCOUNT_ID:secret:mortgage-underwriting/db-password"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/mortgage-underwriting",
+          "awslogs-region": "REGION",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "healthCheck": {
+        "command": ["CMD-SHELL", "curl -f http://localhost:8501/_stcore/health || exit 1"],
+        "interval": 30,
+        "timeout": 10,
+        "retries": 3
+      },
+      "essential": true
+    }
+  ]
+}

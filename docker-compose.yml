@@ -1,0 +1,67 @@
+version: "3.9"
+
+services:
+  # --- PostgreSQL ---
+  postgres:
+    image: postgres:16-alpine
+    container_name: underwriting-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-underwriting}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-underwriting_secret}
+      POSTGRES_DB: ${POSTGRES_DB:-mortgage_underwriting}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-underwriting}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # --- ChromaDB ---
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: underwriting-chromadb
+    restart: unless-stopped
+    ports:
+      - "${CHROMA_PORT:-8000}:8000"
+    volumes:
+      - chroma_data:/chroma/chroma
+    environment:
+      IS_PERSISTENT: "TRUE"
+      ANONYMIZED_TELEMETRY: "FALSE"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # --- Streamlit Application ---
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: underwriting-app
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-8501}:8501"
+    env_file:
+      - .env
+    environment:
+      # Override hosts to use Docker service names
+      POSTGRES_HOST: postgres
+      CHROMA_HOST: chromadb
+      DATABASE_URL: postgresql://${POSTGRES_USER:-underwriting}:${POSTGRES_PASSWORD:-underwriting_secret}@postgres:5432/${POSTGRES_DB:-mortgage_underwriting}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      chromadb:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data:ro
+
+volumes:
+  pgdata:
+  chroma_data:
